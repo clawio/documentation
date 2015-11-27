@@ -4,7 +4,7 @@ ClawIO is a Cloud Synchronisation Benchmarking Framework.
 
 It measures the scalability and efficiency of different cloud synchronisation protocols against a variety of data and metadata backends.
 
-ClawIO allows testing a particular sync protocol in order to help organsiations to choose the most suited data backend.
+ClawIO allows benchmarking a particular sync protocol in order to help organsiations choosing the right file system.
 
 .
 
