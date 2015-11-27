@@ -2,7 +2,7 @@
 
 ClawIO design is highly influenced by the latest developments of file systems and object storages with a focus on high performance data handling, in particular by CERN EOS project.
 
-ClawIO architecture is also is also influenced by the architecture specification found on the IETF Internet Sync Storage draft.
+ClawIO architecture is also influenced by the architecture specification found on the IETF Internet Sync Storage draft.
 
 
 ClawIO is divided into four main logical units.
