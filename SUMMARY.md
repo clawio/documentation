@@ -1,6 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * Design
+   * [Design](design.md)
 * [Deployment](deployment.md)
 
