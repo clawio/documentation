@@ -13,6 +13,8 @@ ClawIO is divided into four main logical units.
 * Metadata unit
 * Sync unit
 
+Further developments will include a Share unit.
+
 ## Authentication unit.
 
 This unit is responsible for authenticating  users against an identity provider.
