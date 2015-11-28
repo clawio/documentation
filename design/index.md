@@ -21,6 +21,8 @@ These abstractions allow to develop advanced architectures.
 
 Even, it allow you to create your SpotifyFS, at the end, an album is a container of songs and songs are objects.
 
+## Logical Units
+
 ClawIO is divided into four main logical units.
 
 
