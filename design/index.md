@@ -1,14 +1,25 @@
 # Design
 
-ClawIO design is highly influenced by the latest developments of file systems and object storages with a focus on high performance data handling, in particular by CERN EOS project.
+ClawIO design is highly influenced by the latest developments of file systems and object storages with a focus on high performance data handling, in particular by [CERN EOS project](http://eos.web.cern.ch/content/about-eos).
 
 ClawIO architecture is also influenced by the architecture specification found on the [IETF Internet Sync Storage draft](https://datatracker.ietf.org/doc/draft-cui-iss-problem/?include_text=1).
 
 ## Key terms
-ClawIO provides an abstraction over local filesystem and the terms folder and file are just implementations of two core concepts:
 
-* Container:
-* Object:
+ClawIO basic data unit is the **Resource**.
+
+A Resource is one these types:
+
+* A **Container**: a resource that can contain resources inside.
+
+* An **Object**: a resource that contains binary data.
+
+
+ClawIO provides an abstraction over local file systems and the terms folder and file are just implementations of such concepts.
+
+These abstractions allow to develop advanced architectures. 
+
+Even, it allow you to create your SpotifyFS, at the end, an album is a container of songs and songs are objects.
 
 ClawIO is divided into four main logical units.
 
