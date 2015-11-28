@@ -15,12 +15,12 @@ ClawIO is divided into four main logical units.
 
 *Further developments will include a Share unit.*
 
+![Basic Design](basic_design.png)
+
+
 ## The Core
 
 The ClawIO Core is composed of just three logical units: authentication, data and metadata unit.
-
-![Basic Design](basic_design.png)
-
 
 ## Default implementation
 
