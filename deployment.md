@@ -44,7 +44,6 @@ cp orches/docker-compose.yml .
 # some containers need to be launched in sequence and 
 # compose does not guarantee that, we launch them in manually
 # in the desired sequence.
-
 docker-compose up -d --force-recreate service.auth
 docker-compose up -d service.auth
 
