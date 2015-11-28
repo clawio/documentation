@@ -10,7 +10,7 @@ ClawIO basic data unit is the **Resource**.
 
 A Resource is one of these types:
 
-* A **Container**: a resource that can contains resources inside.
+* A **Container**: a resource that can contains others resources inside.
 
 * An **Object**: a resource that contains binary data.
 
