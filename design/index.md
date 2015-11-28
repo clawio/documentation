@@ -22,6 +22,8 @@ ClawIO is divided into four main logical units.
 
 The ClawIO Core is composed of just three logical units: authentication, data and metadata unit.
 
+The Authentication Unit is responsible for authenticating users against an Identity Provider.
+
 ## Default implementation
 
 The default implementation shipped when installing ClawIO is the following:
