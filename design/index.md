@@ -19,7 +19,7 @@ ClawIO provides an abstraction over local file systems and the terms folder and 
 
 These abstractions allow to develop advanced architectures. 
 
-Even, it allow you to create your SpotifyFS, at the end, an album is a container of songs and songs are objects.
+Even, it allow you to create your SpotifyFS, at the end, an album is a container of songs and songs are objects. And you can go crazy thinking about years as the object version!!!
 
 ClawIO is divided into four main logical units.
 
