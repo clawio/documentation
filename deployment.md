@@ -27,8 +27,8 @@ Copy this script and execute it.
 # In production you really want to change this variable 
 CLAWIO_INSTALL_PATH=/tmp/clawioproject
 
-mkdir -p CLAWIO_INSTALL_PATH
-cd CLAWIO_INSTALL_PATH
+mkdir -p ${CLAWIO_INSTALL_PATH}
+cd ${CLAWIO_INSTALL_PATH}
 
 # Clone required services. Add your own.
 git clone https://github.com/clawio/orches
