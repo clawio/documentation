@@ -8,7 +8,7 @@ ClawIO architecture is also influenced by the architecture specification found o
 
 ClawIO basic data unit is the **Resource**.
 
-A Resource is one these types:
+A Resource is one of these types:
 
 * A **Container**: a resource that can contain resources inside.
 
