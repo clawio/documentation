@@ -15,6 +15,22 @@ ClawIO is divided into four main logical units.
 
 Further developments will include a Share unit.
 
+![Basic Design](basic_design.png)
+
+
+## Default implementation
+
+The default implementation shipped when installing ClawIO is the following:
+
+![Default Implemenentation](./default_implementation.png)
+
+Units:
+
+* Authentication Unit: implemented using a SQLite3 database.
+
+* Data Unit: implemented using commonn filesystems like EXT4, exFAT, XFS ...
+* Meta Unit: implemented using common filesystems plus a MySQL database.
+* 
 ## Authentication unit.
 
 This unit is responsible for authenticating  users against an identity provider.
