@@ -17,7 +17,7 @@ A Resource is one of these types:
 
 ClawIO provides an abstraction over local file systems and the terms folder and file are just implementations of such concepts.
 
-These abstractions allow to develop advanced architectures. 
+Advanced architectures can be created on top of such concepts.
 
 Even, it allow you to create your SpotifyFS, at the end, an album is a container of songs and songs are objects.
 
