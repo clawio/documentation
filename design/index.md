@@ -4,6 +4,11 @@ ClawIO design is highly influenced by the latest developments of file systems an
 
 ClawIO architecture is also influenced by the architecture specification found on the [IETF Internet Sync Storage draft](https://datatracker.ietf.org/doc/draft-cui-iss-problem/?include_text=1).
 
+## Key terms
+ClawIO provides an abstraction over local filesystem and the terms folder and file are just implementations of two core concepts:
+
+* Container:
+* Object:
 
 ClawIO is divided into four main logical units.
 
@@ -23,6 +28,9 @@ ClawIO is divided into four main logical units.
 The ClawIO Core is composed of just three logical units: authentication, data and metadata unit.
 
 The Authentication Unit is responsible for authenticating users against an Identity Provider.
+ClawIO is shipped with a Authentication Unit that authenticates against a SQLite3 database.
+
+The Data unit is responsible for uploading and downliand
 
 ## Default implementation
 
