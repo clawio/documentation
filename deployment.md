@@ -87,21 +87,33 @@ service.localstore.prop.mysql   /entrypoint.sh mysqld            Up      0.0.0.0
 service.ocwebdav                /bin/sh -c /go/bin/service ...   Up      0.0.0.0:57004->57004/tcp
 ```
 
-In the default installation there is one user created: username `demo` with password `demo`.
+After deployment there is an user account configured: `demo:demo`.
 
-The first thing you want is to create a home directory for this user. The easiest way to do it is to use the ClawIO Command Line Interface program.
+The first thing you want to do is to create a home directory for this user. 
 
-Before using the OwnCloud client you have to use the ClawIO CLI to setup your user:
+The easiest way to achieve such purpose  it is to use the `ClawIO Command Line Interface.`
 
+The fastest way to get it is to run a container with the tool already installed.
+
+```
  docker run -it --link "service.auth:service-auth" --link "service.localstore.data:service-localstore-data" --link "service.localstore.meta:service-localstore-meta" labkode/clawio bash
-Once inside the container run:
+ ```
 
-clawio login demo demo
+Once you are inside the container execute:
+
+```
+clawio login demo demo`
 clawio home
 clawio stat /local/users/d/demo --children
-You can upload some files and create some directories:
+```
 
+Execution the command above you have logged into ClawIO, you have created your home directory and you have listed the files under your home directory, that should be empty.
+
+You can also upload some files and create some directories:
+
+```
 clawio mkdir /local/users/d/demo/folderone
 clawio upload /etc/passwd /local/users/d/demo/file
 clawio upload /etc/passwd /local/users/d/demo/filewithchecksum --checksum="md5:$(md5sum /etc/passwd | cut -d ' ' -f1)"
 clawio stat /local/users/d/demo --children
+```
