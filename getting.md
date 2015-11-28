@@ -2,7 +2,11 @@
 
 In this tutorial you will install ClawIO and play with it.
 
-You need to install Docker and Docker Compose before continuing:
+## Requirements
+You need to have installed:
+
+* [Docker](http://docs.docker.com/)
+* [Docker Compose](http://docs.docker.com/compose/install/)
 
 ## Installing ClawIO
 
