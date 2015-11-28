@@ -16,8 +16,6 @@ You have to have installed:
 * [Docker Compose](http://docs.docker.com/compose/install/)
 
 
-So you will need docker and docker-compose in your machine.
-
 
 ## Deployment script
 
@@ -32,6 +30,7 @@ CLAWIO_INSTALL_PATH=/tmp/clawioproject
 mkdir -p CLAWIO_INSTALL_PATH
 cd CLAWIO_INSTALL_PATH
 
+# Clone required services. Add your own.
 git clone https://github.com/clawio/orches
 git clone https://github.com/clawio/service.auth
 git clone https://github.com/clawio/service.localstore.data
@@ -64,7 +63,7 @@ docker-compose up -d service.localstore.data
 docker-compose up -d --force-recreate service.ocwebdav
 docker-compose up -d service.ocwebdav
 
-# Being paranoic
+# Being paranoic ...
 docker-compose up -d
 docker-compose up -d
 docker-compose up -d
@@ -73,6 +72,25 @@ docker-compose up -d
 docker-compose ps
 
 ```
+
+After running the script the following services are running:
+
+
+```
+            Name                           Command               State            Ports
+-------------------------------------------------------------------------------------------------
+service.auth                    /bin/sh -c /go/bin/service ...   Up      0.0.0.0:57000->57000/tcp
+service.elk                     /app/bin/start                   Up      0.0.0.0:9200->9200/tcp
+service.localstore.data         /bin/sh -c /go/bin/service ...   Up      0.0.0.0:57002->57002/tcp
+service.localstore.meta         /bin/sh -c /go/bin/service ...   Up      0.0.0.0:57001->57001/tcp
+service.localstore.prop         /bin/sh -c /go/bin/service ...   Up      0.0.0.0:57003->57003/tcp
+service.localstore.prop.mysql   /entrypoint.sh mysqld            Up      0.0.0.0:3306->3306/tcp
+service.ocwebdav                /bin/sh -c /go/bin/service ...   Up      0.0.0.0:57004->57004/tcp
+```
+
+In the default installation there is one user created: username `demo` with password `demo`.
+
+The first thing you want is to create a home directory for this user. The easiest way to do it is to use the ClawIO Command Line Interface program.
 
 Before using the OwnCloud client you have to use the ClawIO CLI to setup your user:
 
