@@ -6,8 +6,6 @@ It measures the scalability and efficiency of different cloud synchronisation pr
 
 ClawIO allows benchmarking a particular sync protocol in order to help organsiations choosing the right file system.
 
-.
-
 ## About this manual
 
 The "source code" of this manual is hosted on GitHub https://github.com/clawio/documentation
