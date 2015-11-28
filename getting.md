@@ -25,9 +25,9 @@ service.ocwebdav                /bin/sh -c /go/bin/service ...   Up      0.0.0.0
 ```
 
 ## Using ClawIO CLI
-ClawIO CLI is a command line program that lets you interact with the ClawIO server is a very convenient way.
+ClawIO CLI is a command line program that lets you interact with the ClawIO server in a very convenient way.
 
-The quickest way to have ClawIO CLI is to run the program in another docker container.
+The quickest way to use ClawIO CLI is to run it inside another docker container.
 
 ```
  docker run -it --link "service.auth:service-auth" --link "service.localstore.data:service-localstore-data" --link "service.localstore.meta:service-localstore-meta" labkode/clawio bash
@@ -62,3 +62,11 @@ Available Commands:
 Use "clawio [command] --help" for more information about a command.
 ```
 
+## Using ownCloud Desktop Clients
+ClawIO is compatible with the ownCloud Sync Protocol so you can use ownCloud Sync Clients.
+
+Download the sync client for your platform at [ownCloud Download Page](https://owncloud.org/install/#install-clients).
+
+Complete the installation process.
+
+Follow 
