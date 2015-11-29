@@ -76,4 +76,7 @@ ownCloud creates the resource three inside a SQL database using a parent-child r
 ClawIO follows [CERNBox](http://cernbox.web.cern.ch/) design. The underlying filesystem is the only source of truth for the resource hierarchy. Such choice avoids the use of a sync job and the SQL database is just used to maintain file ids, Etags and modification times. 
 With this design is possible to offer end users **Direct Access to the Storage**, so changes made via third-party tools to the filesystem will be presented to the user in real time. 
 
-*Further developments will get rid of the SQL database. Developments have been already made with fast KV stores and High Performance databases like Cassandra and AeroThere are other in-development alternatives to the SQL that use Aerospike, Cassandra or HyperDex**
+There is an alternative when ClawIO is deployted on top of a filesystem with support for extended attributes. As the filesystem can attach metadata to a file, file ids are kept along the file in the most **atomic** way. The SQL database is just delegated to a KV store.
+
+*Further developments will discard the SQL database in favour of fast KV stores or High Performance databases.
+Some proptypes exist like Cassandra and AeroThere are other in-development alternatives to the SQL that use Aerospike, Cassandra or HyperDex**
