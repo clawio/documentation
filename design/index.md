@@ -41,9 +41,11 @@ ClawIO is divided into four main logical units.
 The ClawIO Core is composed of just three logical units: authentication, data and metadata unit.
 
 The Authentication Unit is responsible for authenticating users against an Identity Provider.
-ClawIO is shipped with a Authentication Unit that authenticates against a SQLite3 database.
+ClawIO is shipped with a Authentication Unit that authenticates users against a SQLite3 database.
 
-The Data unit is responsible for uploading and downliand
+The Data unit is responsible for uploading and download binary data. Nothing else.
+
+The Metadata Unit is responsible for handling a resource hierarchy and operating such hierarchy. Actions that involve the Metadata Unit include listing containers, creating containers, removing, moving and copying resources.
 
 ## Default implementation
 
