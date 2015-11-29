@@ -150,8 +150,8 @@ The server name is `localhost` if you run the docker daemon on your machine or `
 ![Step 1](./clawio-owncloud-client-1.png)
 ![Step 2](./clawio-owncloud-client-2.png)
 ![Step 3](./clawio-owncloud-client-3.png)
-**You have to click Skip folders configuration**
-
 ![Step 4](./clawio-owncloud-client-4.png)
+![Step 5](./clawio-owncloud-client-5.png)
+![Step 6](./clawio-owncloud-client-6.png)
 
 
