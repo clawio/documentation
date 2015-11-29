@@ -82,4 +82,4 @@ There is an alternative when ClawIO is deployed on top of a filesystem with supp
 Databases considered for prototyping are AeroSpike, Cassandra and HyperDex. There is a built-in prototype using AeroSpike.*
 
 ### Sync Unit
-The Sync Unit shipped with ClawIO implements the ownCloud Sync Protocol so ownCloud Desktop Clients can benefit of ClawIO high performance architecture and data integrity.
+ClawIO main focus is to benchmark sync protocol against a variety of data backends. The Sync Protocl shipped with ClawIO is the ownCloud Sync Protocol.
