@@ -85,7 +85,7 @@ Lets list the resources in our home directory.
 clawio stat /local/users/d/demo --children
 ```
 
-We have not any resource yet so the list will just contain our home container (/local/users/d/demo)
+We have not any resource yet so the list will just contain our home container (*/local/users/d/demo*).
 ```
 
 ID                                    Path                 Container  Size  Modified    Permissions  ETag                                  Mime             Checksum
