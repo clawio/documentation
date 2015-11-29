@@ -158,7 +158,9 @@ The server name is `localhost` if you run the docker daemon on your machine or `
 
 Now your ownCloud Desktop Sync Client will download the files created previously to your local folder.
 
+
 ## Where to go next
+We have covereted the basis of ClawIO: launching the service, touching the ClawIO CLI and using ownCloud Desktop Sync Clients.
 
-
+I recommend you to read the Design section to get an insight of the architecture used by ClawIO and go to the Development section in you are interested in extending the project.
 
