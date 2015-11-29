@@ -80,3 +80,6 @@ There is an alternative when ClawIO is deployed on top of a filesystem with supp
 
 *Further developments will discard the SQL database in favor of fast KV stores or High Performance databases.
 Databases considered for prototyping are AeroSpike, Cassandra and HyperDex. There is a built-in prototype using AeroSpike.*
+
+### Sync Unit
+The Sync Unit shipped with ClawIO implements the ownCloud Sync Protocol so ownCloud Desktop Clients can benefit of ClawIO high performance architecture and data integrity.
