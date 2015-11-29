@@ -87,4 +87,4 @@ ClawIO main focus is to benchmark synchronisation protocols against a variety of
 The Sync Protocol shipped with ClawIO is the ownCloud Sync Protocol. ownCloud clients like the Desktop Sync Client can be connected to the ClawIO server to experiment different data backends.
 To ensure the protocol implementation is correct the SmashBox test suite is run against the implementation.
 
-*Further *
+*Further developments will include the SeaFile sync protocol. The choice of the SeaFile sync protocol is because its implementation is radically different from ownCloud. This could lead to the standard sync specification ISS researches is trying to create.*
