@@ -147,6 +147,8 @@ Complete the installation process.
 
 The server name is `localhost` if you run the docker daemon on your machine or `docker-machine ip default` if you are on Mac OSX.
 
+**You have to click Skip folders
+
 
 
 
