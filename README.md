@@ -8,7 +8,7 @@ ClawIO allows benchmarking a particular sync protocol in order to help organsiat
 
 ## About this manual
 
-The "source code" of this manual is hosted on GitHub https://github.com/clawio/documentation
+The "source code" of this manual is hosted on [GitHub]( https://github.com/clawio/documentation)
 
 ## Contact information
 
