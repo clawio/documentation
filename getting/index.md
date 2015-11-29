@@ -158,5 +158,7 @@ The server name is `localhost` if you run the docker daemon on your machine or `
 
 Now your ownCloud Desktop Sync Client will download the files created previously to your local folder.
 
+## Where to go next
+
 
 
