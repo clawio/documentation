@@ -84,4 +84,4 @@ Databases considered for prototyping are AeroSpike, Cassandra and HyperDex. Ther
 ### Sync Unit
 ClawIO main focus is to benchmark synchronisation protocols against a variety of data backends. 
 
-The Sync Protocol shipped with ClawIO is the ownCloud Sync Protocol.
+The Sync Protocol shipped with ClawIO is the ownCloud Sync Protocol. ownCloud clients like the Desktop Sync Client can be connected to the ClawIO server to experiment different data backends.
