@@ -153,5 +153,6 @@ The server name is `localhost` if you run the docker daemon on your machine or `
 ![Step 4](./clawio-owncloud-client-4.png)
 ![Step 5](./clawio-owncloud-client-5.png)
 ![Step 6](./clawio-owncloud-client-6.png)
+![Step 7](./clawio-owncloud-client-7.png)
 
 
