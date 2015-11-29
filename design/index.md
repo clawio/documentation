@@ -47,7 +47,7 @@ The Data unit is responsible for uploading and download binary data. Nothing els
 
 The Metadata Unit is responsible for handling a resource hierarchy and operating such hierarchy. Actions that involve the Metadata Unit include listing containers, creating containers, removing, moving and copying resources.
 
-## Default implementation
+## Default architecture
 
 The default implementation shipped with ClawIO is the following:
 
