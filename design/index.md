@@ -78,5 +78,5 @@ With this design is possible to offer end users **Direct Access to the Storage**
 
 There is an alternative when ClawIO is deployted on top of a filesystem with support for extended attributes. As the filesystem can attach metadata to a file, file ids are kept along the file in the most **atomic** way. The SQL database is just delegated to a pseudo-KV store.
 
-*Further developments will discard the SQL database in favour of fast KV stores or High Performance databases.
-Some proptypes exist like Cassandra and AeroThere are other in-development alternatives to the SQL that use Aerospike, Cassandra or HyperDex**
+*Further developments will discard the SQL database in favor of fast KV stores or High Performance databases.
+Databases considered for prototyping are AeroSpike, Cassandra and HyperDex.*
