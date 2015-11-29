@@ -135,7 +135,7 @@ ID                                    Path                               Contain
 a8362af2-aa48-4f46-8cb9-55bfb7440597  /local/users/d/demo/docs/mypasswd  false      5937  1448826348  0            85f4eba0-0b17-4043-a9f9-0dceeb69a8e4  application/octet-stream  md5:c15ba5ba9f0e0bcee0866b6e8c40d4c7
 ```
 
-
+The ClawIO CLI has more functions to play with, feel free to experiment or check the ClawIO CLI documentation.
 
 
 ## Using ownCloud Desktop Clients
