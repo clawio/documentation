@@ -65,6 +65,8 @@ The Authentication Unit is implemented with a SQLite3 database. Postgres, MySQL,
 
 The Data Unit is implemented on top of a common filesystem like EXT4, EXT3, exFAT, NTFS and FAT. The object is saved **atomically** into a file. ClawIO has been designed with special care for data integrity and MD5, SHA1 and Adler32 checksums are supported out of the box for ensuring data integrity in the transmission from a client.  Other checksums can be added with extreme simplicity.
 
+*Further developments will include using OpenStack Swift/Amazon S3 and Ceph Rados GW as data units*.
+
 The Metadata Unit is also implemented on top of a common filesystem. Such design choice is a **big difference** between ClawIO and ownCloud.
 
 ownCloud creates the resource three inside a SQL database using a parent-child relationship and runs periodic sync jobs to maintain the state between the underlying filesystem and the SQL database. When files are being accessed behind the ownCloud Server the end users will not see the new data until the sync job has finished. As the number of users and resources increase, the load on the SQL database gets really higher.
