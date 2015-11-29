@@ -63,7 +63,7 @@ The Authentication Unit is implemented with a SQLite3 database. Postgres, MySQL,
 
 ### Data Unit
 
-The Data Unit is implemented on top of a common filesystem like EXT4, EXT3, extFAT, NTFS and FAT. The object is saved atomically into a file.
+The Data Unit is implemented on top of a common filesystem like EXT4, EXT3, extFAT, NTFS and FAT. The object is saved **atomically** into a file. ClawIO has been designed with special care for data integrity and MD5, SHA1 and Adler32 checksums are supported out of the box for ensuring data integrity in the transmission from a client. 
 
 The Metadata Unit is also implemented on top of a common filesystem. Such design choice is a **big difference** between ClawIO and ownCloud.
 
