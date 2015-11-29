@@ -57,7 +57,7 @@ This architecture makes use of common technologies.
 
 
 ### Authentication Unit
-The Authentication Unit is implemented with a SQLite3 database. Postgres, MySQL, MariaDB and FoundationDB can also be used.
+The Authentication Unit is implemented with a SQLite3 database. Postgres, MySQL, MariaDB and FoundationDB can also be used changing a configuration parameter.
 
 *Further developments will include LDAP/AD and Shibboleth Authentication Units.*
 
