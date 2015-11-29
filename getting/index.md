@@ -92,6 +92,52 @@ ID                                    Path                 Container  Size  Modi
 7c7dd6c8-d91a-450f-bd86-78f9c840ef55  /local/users/d/demo  true       4096  1448536338  0            f415602a-05df-4399-a53a-da8b4d206737  inode/container
 ```
 
+Create a new container.
+
+```
+clawio mkdir /local/users/d/demo/docs
+```
+
+After listing again the new container will appear under our home.
+
+```
+ID                                    Path                      Container  Size  Modified    Permissions  ETag                                  Mime             Checksum
+7c7dd6c8-d91a-450f-bd86-78f9c840ef55  /local/users/d/demo       true       4096  1448824962  0            ed66ceae-5693-4d7a-9e1a-28add86a2b2b  inode/container
+2c168e13-8664-4ba8-955d-ff2f28979a53  /local/users/d/demo/docs  true       4096  1448824962  0            ed66ceae-5693-4d7a-9e1a-28add86a2b2b  inode/container
+```
+
+Lets upload a file to the new recently created container.
+```
+clawio upload /etc/passwd /local/users/d/demo/docs/mypasswd
+```
+
+Now the file is saved on the server.
+
+```
+clawio stat /local/users/d/demo/docs --children
+```
+
+```
+ID                                    Path                               Container  Size  Modified    Permissions  ETag                                  Mime                      Checksum
+2c168e13-8664-4ba8-955d-ff2f28979a53  /local/users/d/demo/docs           true       4096  1448825092  0            ef7dc98f-1d2f-4ce7-b5d6-30174af714d4  inode/container
+c8c9bb0e-e0db-4205-b987-95e4efd3eb0d  /local/users/d/demo/docs/mypasswd  false      5937  1448825082  0            4f96acf7-e782-4333-8d8f-6e7ee510d24c  application/octet-stream
+```
+
+We can even provide a checksum when uploading the file to avoid data corruption in the transmission.
+
+```
+clawio upload /etc/passwd /local/users/d/demo/mypasswd --checksum="md5:c15ba5ba9f0e0bcee0866b6e8c40d4c7"
+```
+
+```
+ID                                    Path                               Container  Size  Modified    Permissions  ETag                                  Mime                      Checksum
+51df577a-aa1f-463e-ace4-97cd89f52711  /local/users/d/demo/docs           true       4096  1448826356  0            9d5655b3-a5db-49ec-8289-20306e7a7398  inode/container
+a8362af2-aa48-4f46-8cb9-55bfb7440597  /local/users/d/demo/docs/mypasswd  false      5937  1448826348  0            85f4eba0-0b17-4043-a9f9-0dceeb69a8e4  application/octet-stream  md5:c15ba5ba9f0e0bcee0866b6e8c40d4c7
+```
+
+
+
+
 ## Using ownCloud Desktop Clients
 ClawIO is compatible with the ownCloud Sync Protocol so you can use ownCloud Sync Clients.
 
