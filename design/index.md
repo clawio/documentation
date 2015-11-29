@@ -53,7 +53,11 @@ The default architecture shipped with ClawIO is the following:
 
 ![Default Implemenentation](./default_implementation.png)
 
-The Authentication Unit is implemented with a SQLite3 database. 
+This architecture makes use of common technologies.
+
+
+### Authentication Unit
+The Authentication Unit is implemented with a SQLite3 database. Postgres, MySQL, MariaDB and FoundationDB can also be used.
 
 *Further developments will include LDAP/AD and Shibboleth Authentication Units.*
 
@@ -65,4 +69,4 @@ ownCloud creates the resource three inside a SQL database using a parent-child r
 
 ClawIO follows [CERNBox](http://cernbox.web.cern.ch/) design. The underlying filesystem is the only source of truth for the resource hierarchy. Such choice avoids the use of a sync job and the SQL database is just used to maintain file ids, Etags and modification times. 
 With this design is possible to offer end users Direct Access to the Storage, so changes made via third-party tools to the filesystem will be presented to the user in real time. 
-There are other in-development solutions that uses fast K
+*Further developments will get rid of the SQL database. Developments have been already made with fast KV stores and High Performance databases like Cassandra and AeroThere are other in-development alternatives to the SQL that use Aerospike, Cassandra or HyperDex**
