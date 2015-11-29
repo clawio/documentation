@@ -145,4 +145,8 @@ Download the sync client for your platform at [ownCloud Download Page](https://o
 
 Complete the installation process.
 
-Follow 
+The server name is `localhost` if you run the docker daemon on your machine or `docker-machine ip default` if you are on Mac OSX.
+
+
+
+
