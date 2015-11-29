@@ -160,7 +160,7 @@ Now your ownCloud Desktop Sync Client will download the files created previously
 
 
 ## Where to go next
-We have covereted the basis of ClawIO: launching the service, touching the ClawIO CLI and using ownCloud Desktop Sync Clients.
+We have covered the basis of ClawIO: launching the service, touching the ClawIO CLI and using ownCloud Desktop Sync Clients.
 
 I recommend you to read the Design section to get an insight of the architecture used by ClawIO and go to the Development section in you are interested in extending the project.
 
