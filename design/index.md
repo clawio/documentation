@@ -59,8 +59,7 @@ The Authentication Unit is implemented with a SQLite3 database.
 
 The Data Unit is implemented on top of a common filesystem like EXT4, EXT3, extFAT, NTFS and FAT. The object is saved atomically into a file.
 
-The Metadata Unit is also implemented on top of a common filesystem. 
-The resource hierarchy is given by the filesystem. This is a **big difference** between ClawIO and ownCloud, where the former creates the resource three inside a SQL database. Both approaches has advantages and disadvantages.
+The Metadata Unit is also implemented on top of a common filesystem. uch design choice is a **big difference** between ClawIO and ownCloud, where the former creates the resource three inside a SQL database. Both approaches has advantages and disadvantages.
 
 * Authentication Unit: implemented using a SQLite3 database.
 
