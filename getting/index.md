@@ -73,12 +73,24 @@ clawio login demo demo
 ```
 
 
-In order to upload objects and create containers we need to create our home container (~).
+In order to upload objects and create containers, we need to create our home container (~) first.
 
 ```
 clawio home 
 ```
 
+Lets list the resources in our home directory.
+
+```
+clawio stat /local/users/d/demo --children
+```
+
+We have not any resource yet so the list will just contain our home container (/local/users/d/demo)
+```
+
+ID                                    Path                 Container  Size  Modified    Permissions  ETag                                  Mime             Checksum
+7c7dd6c8-d91a-450f-bd86-78f9c840ef55  /local/users/d/demo  true       4096  1448536338  0            f415602a-05df-4399-a53a-da8b4d206737  inode/container
+```
 
 ## Using ownCloud Desktop Clients
 ClawIO is compatible with the ownCloud Sync Protocol so you can use ownCloud Sync Clients.
