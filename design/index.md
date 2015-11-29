@@ -61,6 +61,8 @@ The Authentication Unit is implemented with a SQLite3 database. Postgres, MySQL,
 
 *Further developments will include LDAP/AD and Shibboleth Authentication Units.*
 
+### Data Unit
+
 The Data Unit is implemented on top of a common filesystem like EXT4, EXT3, extFAT, NTFS and FAT. The object is saved atomically into a file.
 
 The Metadata Unit is also implemented on top of a common filesystem. Such design choice is a **big difference** between ClawIO and ownCloud.
