@@ -156,4 +156,7 @@ The server name is `localhost` if you run the docker daemon on your machine or `
 ![Step 7](./clawio-owncloud-client-7.png)
 ![Step 8](./clawio-owncloud-client-8.png)
 
+Now your ownCloud Desktop Sync Client will download the files created previously to your local folder.
+
+
 
