@@ -49,7 +49,7 @@ The Metadata Unit is responsible for handling a resource hierarchy and operating
 
 ## Default architecture
 
-The default implementation shipped with ClawIO is the following:
+The default architecture shipped with ClawIO is the following:
 
 ![Default Implemenentation](./default_implementation.png)
 
