@@ -147,8 +147,11 @@ Complete the installation process.
 
 The server name is `localhost` if you run the docker daemon on your machine or `docker-machine ip default` if you are on Mac OSX.
 
-**You have to click Skip folders
+![Step 1](./clawio-owncloud-client-1.png)
+![Step 2](./clawio-owncloud-client-2.png)
+![Step 3](./clawio-owncloud-client-3.png)
+**You have to click Skip folders configuration**
 
-
+![Step 4](./clawio-owncloud-client-4.png)
 
 
