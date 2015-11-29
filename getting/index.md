@@ -66,6 +66,20 @@ Available Commands:
 Use "clawio [command] --help" for more information about a command.
 ```
 
+Before interacting with the system we have to log into the server.
+
+```
+clawio login demo demo
+```
+
+
+In order to upload objects and create containers we need to create our home container (~).
+
+```
+clawio home 
+```
+
+
 ## Using ownCloud Desktop Clients
 ClawIO is compatible with the ownCloud Sync Protocol so you can use ownCloud Sync Clients.
 
