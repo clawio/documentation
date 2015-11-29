@@ -63,16 +63,4 @@ The Metadata Unit is also implemented on top of a common filesystem. Such design
 
 ownCloud creates the resource three inside a SQL database using a parent-child relationship and runs periodic sync jobs to maintain the state between the underlying filesystem and the SQL database. When files are being accessed behind the ownCloud Server the end users will not see the new data until the sync job has finished. As the number of users and resources increase the load on the SQL database can gets really higher.
 
-
-This causes two problems:
-
-1. The users will see cached information until the sync jobs has finished.
-
-2. Real time access to data is 
-
-
-* Authentication Unit: implemented using a SQLite3 database.
-
-* Data Unit: implemented using commonn filesystems like EXT4, exFAT, XFS ...
-* Meta Unit: implemented using common filesystems plus a MySQL database.
-* 
+ClawIO follows [CERNBox](http://cernbox.web.cern.ch/) design.
