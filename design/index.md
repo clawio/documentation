@@ -57,7 +57,7 @@ The Authentication Unit is implemented with a SQLite3 database.
 
 *Further developments will include LDAP/AD and Shibboleth Authentication Units.*
 
-The Data Unit is implemented on top of a common filesystems like EXT4, EXT3, extFAT, NTFS and FAT. The object is saved atomically in a file.
+The Data Unit is implemented on top of a common filesystem like EXT4, EXT3, extFAT, NTFS and FAT. The object is saved atomically in a file.
 
 * Authentication Unit: implemented using a SQLite3 database.
 
