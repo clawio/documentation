@@ -53,7 +53,9 @@ The default architecture shipped with ClawIO is the following:
 
 ![Default Implemenentation](./default_implementation.png)
 
-The Authentication Unit is implemented with a SQLite3 database. *Further developments will include LDAP/AD and Shibboleth Authentication Units.*
+The Authentication Unit is implemented with a SQLite3 database.
+
+*Further developments will include LDAP/AD and Shibboleth Authentication Units.*
 
 * Authentication Unit: implemented using a SQLite3 database.
 
