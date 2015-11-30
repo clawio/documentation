@@ -65,7 +65,7 @@ The Authentication Unit is implemented with a SQLite3 database. Postgres, MySQL,
 
 The Data Unit is implemented on top of a common filesystem like EXT4, EXT3, exFAT, NTFS and FAT. The object is saved **atomically** into a file. ClawIO has been designed with special care for data integrity and MD5, SHA1 and Adler32 checksums are supported out of the box to ensure data integrity in the transmission from a client.  Other checksums can be added with extreme simplicity.
 
-*Further developments will include using OpenStack Swift/Amazon S3 and Ceph RadosGW as data units. Object*.
+*Further developments will include using [OpenStack Swift](http://docs.openstack.org/developer/swift/)/[Amazon S3](https://aws.amazon.com/s3/) and [Ceph RadosGW]() as data units*.
 
 ### Metadata Unit
 
