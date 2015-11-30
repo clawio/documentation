@@ -74,7 +74,7 @@ The Metadata Unit is also implemented on top of a common filesystem. Such design
 ownCloud creates the resource three inside a SQL database using a parent-child relationship and runs periodic sync jobs to maintain the state between the underlying filesystem and the SQL database. When files are being accessed behind the ownCloud Server, end users will not see the new data until the sync job has finished. As the number of users and resources increase, the load on the SQL database gets really higher.
 
 ClawIO follows [CERNBox](http://cernbox.web.cern.ch/) design. The underlying filesystem is the only source of truth for the resource hierarchy. Such choice avoids the use of a sync job and the SQL database is just used to maintain file ids, Etags and modification times. 
-With this design is possible to offer end users **Direct Access to the Storage**, so changes made via third-party tools to the filesystem will be presented to the user in real time. 
+With this design is possible to offer end users **Direct Access to the Storage**, so changes made via third-party tools to the filesystem will be presented to the user in real time. This approach reduces the load on the database and increases the filesystem IO.
 
 There is an alternative when ClawIO is deployed on top of a filesystem with support for extended attributes like EXT4. These filesystems can attach metadata to a file, so file ids can be kept along the file in the most **atomic** possible way. The SQL database is just delegated to a pseudo-KV store. This design is inspired by [EOS](http://eos.web.cern.ch/content/about-eos), the underlying data backend that powers CERNBox.
 
