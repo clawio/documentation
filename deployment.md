@@ -39,10 +39,11 @@ service.ocwebdav                /bin/sh -c /go/bin/service ...   Up      0.0.0.0
 
 The services running are the following:
 
-* service.auth: it is the authentication unit. It listens on port 57000 and speaks the gRPC protocol.
-* service.localstore.data: it is the data unit. It listens on port 57002 and speaks pure HTTP through GET and PUT requests.
-* service.localstore.meta: it is the meta unit. It listens on port 57001 and speaks the gRPC protocol.
-* service.localstore.prop: it is a supporting component for the localstore implementation. It is responsible for file ids, Etags and modification times. It listens on port 57003 and speaks the gRPC protocol.
-* service.localstore.prop.mysql: is the the MySQL database that powers the service.localstore.prop service.
-* service.ocwebdav: it is the sync unit that implements the ownCloud sync protocol. It listens on port 57004 and speaks WebDAV.
-* service.localstore.prop.mysql
+* **service.auth:** it is the authentication unit. It listens on port 57000 and speaks the gRPC protocol.
+* **service.localstore.data**: it is the data unit. It listens on port 57002 and speaks pure HTTP through GET and PUT requests.
+* **service.localstore.meta**: it is the meta unit. It listens on port 57001 and speaks the gRPC protocol.
+* **service.localstore.prop**: it is a supporting component for the localstore implementation. It is responsible for file ids, Etags and modification times. It listens on port 57003 and speaks the gRPC protocol.
+* **service.localstore.prop.mysql**: is the the MySQL database that powers the service.localstore.prop service.
+* **service.ocwebdav:** it is the sync unit that implements the ownCloud sync protocol. It listens on port 57004 and speaks WebDAV.
+* **service.localstore.prop.mysql**
+* **service.elk**: it runs an ElasticSearch daemon for log recollection. The idea is to use Kibana to inspect logs across services.
