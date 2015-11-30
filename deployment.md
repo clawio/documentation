@@ -46,4 +46,4 @@ The services running are the following:
 * **service.localstore.prop.mysql**: is the the MySQL database that powers the prop service.
 * **service.ocwebdav:** it is the sync unit that implements the ownCloud sync protocol. It listens on port 57004 and speaks WebDAV.
 * **service.localstore.prop.mysql**: it is the MySQL database listening on port 330. Default credentials are `admin:admin`.
-* **service.elk**: it runs an ElasticSearch daemon for log recollection. The idea is to use Kibana to inspect logs across services.
+* **service.elk**: it runs an ElasticSearch daemon for log collection. The idea is to use Kibana to inspect logs across services.
