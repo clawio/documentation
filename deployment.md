@@ -16,7 +16,7 @@ You have to have installed:
 * [Docker Compose](http://docs.docker.com/compose/install/)
 
 
-## Fast installation
+## Installation
 ```
 curl --silent --show-error https://raw.githubusercontent.com/clawio/orches/master/install | sh
  ```
