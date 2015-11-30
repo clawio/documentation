@@ -7,8 +7,11 @@ You need to have installed:
 
 * [Docker](http://docs.docker.com/)
 * [Docker Compose](http://docs.docker.com/compose/install/)
+* [Git](https://git-scm.com)
 
 ## Installing ClawIO
+
+Be sure the docker daemon is running. Check that `docker ps` is working.
 
 ```
 curl --silent --show-error https://raw.githubusercontent.com/clawio/orches/master/install | sh
