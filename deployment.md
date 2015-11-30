@@ -10,7 +10,7 @@ Each micro service is encapsulated into a Dockerfile.
 To run the micro services the recommended way is to run them as Docker containers.
 
 ## Requirements
-You have to have installed:
+You need to install:
 
 * [Docker](http://docs.docker.com/)
 * [Docker Compose](http://docs.docker.com/compose/install/)
